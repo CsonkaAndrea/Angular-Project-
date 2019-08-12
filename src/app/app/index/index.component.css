@@ -1,0 +1,12 @@
+ .col-4 {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+} 
+
+.containter {
+    margin: auto;
+}
