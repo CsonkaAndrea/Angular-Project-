@@ -1,7 +1,9 @@
 <div class="container">
+    <br>
     <div class="row">
         <div class="col-4 offset-4">
             <h1>Edit User</h1>
+            <br>
             <form (submit)="onSubmit($event)" action="">
 
                 <div class="form-group">
@@ -29,11 +31,12 @@
                     <input name="phone" [(ngModel)]="user.phone" type="text" class="form-control">
                 </div>
 
-                <button class="btn btn-primary">
+                <button class="btn btn-outline-primary">
                     Save changes
                 </button>
 
             </form>
         </div>
     </div>
+    <br>
 </div>

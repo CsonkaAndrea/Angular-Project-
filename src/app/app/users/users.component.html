@@ -1,7 +1,6 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-5 offset-1">
-            <h1>{{ title }}</h1>
         </div>
         <div class="col-3">
             <input [(ngModel)]="filterPhrase" type="text" class="form-control">
@@ -18,7 +17,7 @@
     </div>
     <div class="row">
         <div class="col-10 offset-1">
-            <table class="table table-dark table-striped">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th (click)="setSorterKey('id')" class="id title">#</th>
@@ -27,7 +26,7 @@
                         <th (click)="setSorterKey('age')" class="age title">Age</th>
                         <th (click)="setSorterKey('email')" class="email title">Email</th>
                         <th (click)="setSorterKey('phone')" class="phone title">Phone</th>
-                        <th><button class="btn btn-primary btn-block" routerLink="/addnewuser">Add new user</button></th>
+                        <th><button class="btn btn-outline-primary btn-block" routerLink="/addnewuser">Add new user</button></th>
                     </tr>
                 </thead>
 
@@ -40,9 +39,9 @@
                         <td>{{ user.email }}</td>
                         <td>{{ user.phone }}</td>
                         <td>
-                            <div class="btn-group btn-block" role="group">
-                                <button class="btn btn-warning" routerLink="/users/{{ user.id }}">Edit</button>
-                                <button class="btn btn-danger" (click)="deleteUser(user, i)">Remove</button>
+                            <div class="btn-block" role="group">
+                                <button class="btn btn-outline-success" routerLink="/users/{{ user.id }}">Edit</button>
+                                <button class="btn btn-outline-danger" (click)="deleteUser(user, i)">Remove</button>
                             </div>
                         </td>
                     </tr>
