@@ -29,7 +29,7 @@ const appRoutes: Routes = [
     component: UserEditComponent
   },
   {
-    path: "addnewuser",
+    path: "adduser",
     component: UserAddComponent
   },
   {

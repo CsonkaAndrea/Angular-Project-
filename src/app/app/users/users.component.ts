@@ -30,8 +30,8 @@ export class UsersComponent implements OnInit {
         x => {
           let index = this.userList.indexOf(user);
           this.userList.splice(index, 1);
-          this.changeCounter++;
-        },
+          this.changeCounter++
+        }
       );
     }
   }
@@ -62,3 +62,4 @@ export class UsersComponent implements OnInit {
     this.userSubscription.unsubscribe();
   }
 }
+
